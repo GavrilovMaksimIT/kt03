@@ -1,0 +1,23 @@
+{
+  "name": "kt03-blog-api",
+  "version": "1.0.0",
+  "description": "REST API for a blog platform using Express, Prisma ORM and SQLite",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "test": "node --test --test-concurrency=1"
+  },
+  "dependencies": {
+    "@prisma/client": "6.19.0",
+    "dotenv": "18.0.9",
+    "express": "5.3.0",
+    "joi": "18.3.0"
+  },
+  "devDependencies": {
+    "prisma": "6.19.0",
+    "supertest": "7.3.1"
+  }
+}
